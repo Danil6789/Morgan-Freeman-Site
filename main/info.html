@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>Информация об актере</title>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+	<header class="header" style="height: 62px;">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+			<div class="container-fluid">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="info.html">Информация</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="films.html">Фильмы</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled">Донаты</a>
+					</li>
+					<li class="item-left nav-item">
+						<button class="btn btn-primary" data-bs-target="#sidebar" data-bs-toggle="collapse" aria-controls="sidebar" type="button" aria-controls="sidebar" aria-expanded="true">Боковое меню</button>
+						<div id="sidebar" class="sidebar collapse bg-dark">
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link active" href="#section1" href="#">Карусель</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#section2">Карточки</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#section3">Об актёре</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div id="section1">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="resources\freeman1.webp" alt="Первый слайд">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="resources\freeman2.webp" alt="Второй слайд">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="resources\freeman3.png" alt="Третий слайд">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+
+	<hr>
+
+	<div id="section2">
+		<h2 style="margin: 50px;" class="h2">Карточки</h2>
+		<div class="container-cards">
+
+			<div class="card">
+				<div class="card-header">
+					<h4>Семь</h4>
+				</div>
+				<div class="card-body">
+					<img class="poster-info" src="resources\film1.jpg">
+					<p style="margin: 0px 30px">Детектив Уильям Сомерсет — ветеран уголовного розыска, мечтающий уйти на пенсию и уехать подальше от города и его грешных обитателей. За семь дней до пенсии на Сомерсета сваливаются две неприятности: молодой напарник Миллс и особо изощренное убийство. Острый ум опытного следователя сразу определяет, что за этим преступлением, скорее всего, последуют другие.</p>
+				</div>
+				<div class="card-footer">
+					<a class="btn btn-success" href="https://www.kinopoisk.ru/film/377/">Перейти</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<h4>Целуя девушек</h4>
+				</div>
+				<div class="card-body">
+					<img class="poster-info" src="resources\film2.jpg">
+					<p style="margin: 0px 30px">Похищено восемь молодых, красивых и талантливых женщин. Все они могут погибнуть, если полицейский Алекс Кросс не сможет обнаружить логово неуловимого маньяка, который называет себя Казанова. От городков Дальнего Юга до побережья Калифорнии разворачивается охота. Энергичной свидетельнице Кейт Мактайрнан единственной удаётся вырваться из лап Казановы, и теперь её цель - помочь Алексу освободить остальных жертв.</p>
+				</div>
+				<div class="card-footer">
+					<a class="btn btn-success" href="https://www.kinopoisk.ru/film/1719/">Перейти</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<h4>Побег из Шоушенко</h4>
+				</div>
+				<div class="card-body">
+					<img class="poster-info" src="resources\film3.jpg">
+					<p style="margin: 0px 30px">Бухгалтер Энди Дюфрейн обвинён в убийстве собственной жены и её любовника. Оказавшись в тюрьме под названием Шоушенк, он сталкивается с жестокостью и беззаконием, царящими по обе стороны решётки. Каждый, кто попадает в эти стены, становится их рабом до конца жизни. Но Энди, обладающий живым умом и доброй душой, находит подход как к заключённым, так и к охранникам, добиваясь их особого к себе расположения.</p>
+				</div>
+				<div class="card-footer">
+					<a class="btn btn-success" href="https://www.kinopoisk.ru/film/326/">Перейти</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<hr>
+
+	<div id="section3">
+		<h2 style="margin: 20px 50px;">Об актёре</h2>
+		<div class="div-about-acter">
+			<a class="h3 navbar-toggler" href="#descript" data-bs-toggle="collapse" type="button" aria-controls="descript" aria-expanded="true">Морган Фриман</a>
+			<div class="container-biograf collapse " id="descript">
+				<p>
+					Родился 1 июня 1937 года в Мемфисе (штат Теннесси). Его родителями были Мейми Эдна (урождённая Ревер; 1912—2000), уборщица, и Морган Портфилд Фримен, парикмахер (умер в 1961 году от цирроза печени). Семья Фрименов часто переезжала, они жили в Гринвуде, штат Миссисипи, Гэри, штат Индиана и наконец остановились в Чикаго, штат Иллинойс. На сцене Морган дебютировал в 8 лет, сыграв главную роль в школьном спектакле. В то время он посещал Greenwood High School в Миссисипи. К 12 годам он уже принимал участие в радиошоу в Нашвилл, штат Теннесси. Когда Фримену было 16 лет, он чуть не умер от пневмонии. В 1955 году он окончил Greenwood High, но, отказавшись от частичной стипендии в Jackson State University, предпочёл службу механиком в ВВС США. Военную службу проходил с 1955 по 1959 год, награждён медалью за безупречную службу[5].
+
+					Фримен переехал в Лос-Анджелес в начале 1960-х и работал клерком в Los Angeles Community College. В этот период он также жил в Нью-Йорке, работая танцором на выставке 1964 World’s Fair и в Сан-Франциско, участником Opera Ring music group.
+
+					В начале 1970-х годов Фримен стал известен многочисленной аудитории зрителей, благодаря своему участию в популярном телевизионном сериале «Электрическая компания». Кинодебют актёра состоялся в 1971 году в фильме «Кто сказал, что я не могу прогуляться по радуге?». Прошло 9 лет, прежде чем Фримена пригласили для участия в его следующем фильме — тюремной драме «Брубэйкер». После этого актёр провёл довольно много времени в неизвестности, пока в 1987 году не был номинирован на «Оскар» за лучшую мужскую роль второго плана в фильме «Уличный парень».
+
+					Вторая номинация на «Оскар», но теперь уже за главную мужскую роль, и запоздалый статус ведущего актёра пришли к Фримену в 1989 году после роли шофёра в фильме «Шофёр мисс Дэйзи». Фримен снялся в 1991 году в фильме «Робин Гуд: Принц воров» вместе с Кевином Костнером. Это редкий случай, когда чернокожий актёр играет роль, изначально написанную для актёра с европейской внешностью.
+
+					В 1992 году актёр снимался вместе с Клинтом Иствудом в фильме «Непрощённый», получившем премию «Оскар» в номинации «Лучший фильм года». 1994 год приносит Фримену ещё одну номинацию на премию «Оскар» в категории «Лучший актёр года» за роль в драме по повести Стивена Кинга «Побег из Шоушенка». Большой успех актёру принесла роль полицейского, выслеживающего серийного убийцу, в фильме «Семь», в котором он снимался с Брэдом Питтом. В 1997 году Фримен снялся в роли детектива Алекса Кросса в экранизации романа Джеймса Паттерсона «Целуя девушек». Фильм неожиданно для его создателей пользуется большой популярностью, а актёр в этом же году получил роль в фильме Стивена Спилберга «Амистад».
+
+					В фильме «Столкновение с бездной» (1998) Фримену «досталась» роль обеспокоенного президента США. Затем следует роль в чёрной комедии «Сестричка Бетти» (2000), роль детектива Алекса Кросса в триллере «И пришёл паук» (2001), роль члена администрации президента США в фильме «Цена страха» («Все страхи мира») (2002), офицера вооруженных сил в снятом по повести Стивена Кинга «Ловец снов» (2003). Была и роль Бога в фильмах «Брюс Всемогущий» (2003) и «Эван Всемогущий» (2007), в которых Морган сыграл вместе с Джимом Керри и Стивом Кареллом соответственно.
+
+					В 2005 году актёр получил свою четвёртую номинацию и первый «Оскар» (лучший актёр второго плана) за фильм «Малышка на миллион» (2004), во время съёмок которого он вновь работал с Клинтом Иствудом. С 2005 по 2012 год он снялся в нескольких блокбастерах: «Война миров» (2005, рассказчик), «Бэтмен: Начало» (роль Люциус Фокс) (2005), «Счастливое число Слевина» (2006), «Особо опасен», «Тёмный рыцарь» (роль Люциус Фокс) (2008) и «Тёмный рыцарь: Возрождение легенды» (роль Люциус Фокс) (2012).
+
+					9 ноября 2011 года в Лос-Анджелесе на пресс-конференции, организованной Голливудской ассоциацией иностранной прессы, Эми Адамс и Педро Альмодовар объявили, что Морган Фримен стал лауреатом почётной премии Сесиля Б. Де Милля, которую ему вручили 15 января 2012 года на 69-й церемонии вручения наград премии «Золотой глобус»[6].
+
+					В 2013 году Фримена можно было увидеть в комедии «Starперцы», фантастическом боевике «Обливион», детективном триллере «Иллюзия обмана» и боевике «Падение Олимпа». В период с 2014 по 2016 год актер сыграл в научно-фантастическом фильме «Превосходство» с Джонни Деппом, фантастическом боевике «Люси» со Скарлетт Йоханссон, комедии «Третий лишний 2» и боевике «Падение Лондона» (сиквел «Падения Олимпа»). Кроме того, его можно было увидеть в пеплуме Тимура Бекмамбетова «Бен-Гур» и фильме «Иллюзия обмана 2». В 2018 году актеру была присуждена Премия Гильдии киноактёров США за вклад в кинематограф. В 2019-м Морган Фримен в третий раз исполнил роль президента США Аллана Трамбулла в остросюжетном боевике «Падение Ангела».
+
+					В ноябре 2020 года в российский прокат выйдет криминальная комедия «Афера по-голливудски»[7], в которой Фримен играет главу мафии, выбивающую долг из голливудского продюсера в исполнении Роберта Де Ниро.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<hr>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

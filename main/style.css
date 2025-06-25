@@ -1,0 +1,77 @@
+body{
+	background: #aebfb3;
+}
+.header .nav-link {
+		font-size: 20px;
+}
+.carousel-inner img{
+	height: 700px;
+}
+.container-cards{
+	margin: 40px 100px;
+}
+.cards{
+	padding: 50px 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.card{
+	margin: 30px 0;
+	width: auto;
+}
+.poster-info{
+	width: 20%;
+}
+.card-body{
+	display: flex;
+	flex-direction: row;
+	/*background: #aebfb3;*/
+}
+footer{
+	height: 70px;
+}
+.div-about-acter{
+	padding: 0 40px;
+}
+.container-biograf{
+	padding: 20px;
+	border: 2px solid black;
+	background: white;
+}
+.item-left{
+	position: absolute;
+	right: 20px;
+}
+.sidebar{
+	background: blue;
+}
+.portrait{
+	height: 400px;
+	width: 600px;
+}
+hr{
+	background: black;
+}
+.poster-films{
+	height: 400px;
+	width: 300px;
+	border-radius: 20px;
+
+}
+.card-films{
+	align-items: center;
+	background: transparent;
+	border: 0px;
+}
+.div-begin{
+	display: flex;
+	flex-direction: column;
+
+}
+@media (max-width: 574px) {
+            .img-hide {
+                display: none;
+            }
+        }
